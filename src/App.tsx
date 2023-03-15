@@ -1,24 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
-import SwitchMode from 'components/switchMode/idex';
-import BoxDashboards from 'components/boxDashboards';
+import { FC } from 'react';
+import { ContainerStyled } from './App.styled';
+import { Calculator } from './components';
 
-const Wrapper = styled.div`
-  min-height: 100vh;
-  max-width: 700px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-`;
-
-const App = () => {
+const App: FC = () => {
   return (
-    <Wrapper>
-      <SwitchMode />
-      <BoxDashboards />
-    </Wrapper>
+    <ContainerStyled>
+      <Calculator />
+    </ContainerStyled>
   );
 };
 
